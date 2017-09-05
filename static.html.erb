@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dave Castaneda</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      body {background-color:#b7f1cd;}
+
+    </style>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+      <a class="navbar-brand" href="mailto:david_c_castaneda@yahoo.com">Contact Me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.linkedin.com/in/davecastaneda/">LinkedIn
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/davecastaneda">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://athousandlinesofcode.wordpress.com/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UCIwAazCqkA-cIDmLxWwituA">YouTube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/1klinesofcode">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Dave Castaneda - Full Stack Web Developer in Chicago</h1>
+          <p class="lead">I am open to new job opportunities for full stack, front end, or back end development!</p>
+          <%= image_tag "dave.png", class: "img-responsive img-centered" %>
+          <ul class="list-unstyled">
+            <li>I am preparing a new Ruby on Rails project to go live soon, and will be updating this page shortly.</li>
+            <li>Please send tech questions, or resume requests to:</li>
+            <a href="mailto:david_c_castaneda@yahoo.com">david_c_castaneda@yahoo.com</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
+
